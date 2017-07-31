@@ -30,6 +30,12 @@ class GameScene: SKScene {
         addChild(zombie)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        let touchLocation = touch.location(in: self)
+        sceneTouched(touchLocation: touchLocation)
+    }
+    
     override func update(_ currentTime: TimeInterval) {
         if lastUpdateTime > 0.0 {
             dt = currentTime - lastUpdateTime
@@ -39,7 +45,15 @@ class GameScene: SKScene {
         lastUpdateTime = currentTime
         print("\(dt*1000.0) milliseconds since last update")
         
-        zombie.position = CGPoint(x: zombie.position.x+8.0, y: zombie.position.y)
+//        zombie.position = CGPoint(x: zombie.position.x+8.0, y: zombie.position.y)
+//        moveSprite(sprite: zombie, velocity: CGPoint(x: zombieMovePointsPerSec, y: 0.0))
+        moveSprite(sprite: zombie, velocity: velocity)
+        
+        boundsCheckZombie()
+    }
+    
+    func sceneTouched(touchLocation: CGPoint) {
+        moveZombieToward(location: touchLocation)
     }
     
     func moveSprite(sprite: SKSpriteNode, velocity: CGPoint) {
@@ -47,5 +61,37 @@ class GameScene: SKScene {
         print("amount to move \(amountToMove)")
         
         sprite.position = CGPoint(x: sprite.position.x+amountToMove.x, y: sprite.position.y+amountToMove.y)
+    }
+    
+    func moveZombieToward(location: CGPoint) {
+        let offset = CGPoint(x: location.x-zombie.position.x, y: location.y-zombie.position.y)
+        let length = sqrt(Double(offset.x*offset.x + offset.y*offset.y))
+        let direction = CGPoint(x: offset.x/CGFloat(length), y: offset.y/CGFloat(length))
+        velocity = CGPoint(x: direction.x*zombieMovePointsPerSec, y: direction.y*zombieMovePointsPerSec)
+    }
+    
+    func boundsCheckZombie() {
+        let bottomLeft = CGPoint.zero
+        let topRight = CGPoint(x: size.width, y: size.height)
+        
+        if zombie.position.x <= bottomLeft.x {
+            zombie.position.x = bottomLeft.x
+            velocity.x = -velocity.x
+        }
+        
+        if zombie.position.x >= topRight.x {
+            zombie.position.x = topRight.x
+            velocity.x = -velocity.x
+        }
+        
+        if zombie.position.y <= bottomLeft.y {
+            zombie.position.y = bottomLeft.y
+            velocity.y = -velocity.y
+        }
+        
+        if zombie.position.y >= topRight.y {
+            zombie.position.y = topRight.y
+            velocity.y = -velocity.y
+        }
     }
 }
