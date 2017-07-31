@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902648791F2F5A2E007148FE /* MyUntils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902648781F2F5A2E007148FE /* MyUntils.swift */; };
 		904D1A5D1F2EA72C0035015E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D1A5C1F2EA72C0035015E /* AppDelegate.swift */; };
 		904D1A611F2EA72D0035015E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 904D1A601F2EA72D0035015E /* Actions.sks */; };
 		904D1A631F2EA72D0035015E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D1A621F2EA72D0035015E /* GameScene.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		902648781F2F5A2E007148FE /* MyUntils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUntils.swift; sourceTree = "<group>"; };
 		904D1A591F2EA72C0035015E /* SpriteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		904D1A5C1F2EA72C0035015E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		904D1A601F2EA72D0035015E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				904D1A5C1F2EA72C0035015E /* AppDelegate.swift */,
+				902648781F2F5A2E007148FE /* MyUntils.swift */,
 				904D1A601F2EA72D0035015E /* Actions.sks */,
 				904D1A621F2EA72D0035015E /* GameScene.swift */,
 				904D1A641F2EA72E0035015E /* GameViewController.swift */,
@@ -268,6 +271,7 @@
 			files = (
 				904D1A631F2EA72D0035015E /* GameScene.swift in Sources */,
 				904D1A651F2EA72E0035015E /* GameViewController.swift in Sources */,
+				902648791F2F5A2E007148FE /* MyUntils.swift in Sources */,
 				904D1A5D1F2EA72C0035015E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +519,7 @@
 				904D1A891F2EA72F0035015E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		904D1A8A1F2EA72F0035015E /* Build configuration list for PBXNativeTarget "SpriteDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				904D1A8C1F2EA72F0035015E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		904D1A8D1F2EA72F0035015E /* Build configuration list for PBXNativeTarget "SpriteDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +537,7 @@
 				904D1A8F1F2EA72F0035015E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
