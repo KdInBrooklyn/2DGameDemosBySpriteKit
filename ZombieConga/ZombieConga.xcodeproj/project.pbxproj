@@ -16,6 +16,7 @@
 		900D20681F30A5E900683420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900D20661F30A5E900683420 /* LaunchScreen.storyboard */; };
 		900D20731F30A5E900683420 /* ZombieCongaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D20721F30A5E900683420 /* ZombieCongaTests.swift */; };
 		900D207E1F30A5E900683420 /* ZombieCongaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D207D1F30A5E900683420 /* ZombieCongaUITests.swift */; };
+		90BA243E1F335A9600A7BD9C /* MyUntils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BA243D1F335A9600A7BD9C /* MyUntils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		900D20791F30A5E900683420 /* ZombieCongaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieCongaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D207D1F30A5E900683420 /* ZombieCongaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieCongaUITests.swift; sourceTree = "<group>"; };
 		900D207F1F30A5E900683420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BA243D1F335A9600A7BD9C /* MyUntils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUntils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				900D20571F30A5E900683420 /* AppDelegate.swift */,
+				90BA243D1F335A9600A7BD9C /* MyUntils.swift */,
 				900D205B1F30A5E900683420 /* Actions.sks */,
 				900D205D1F30A5E900683420 /* GameScene.swift */,
 				900D205F1F30A5E900683420 /* GameViewController.swift */,
@@ -268,6 +271,7 @@
 			files = (
 				900D205E1F30A5E900683420 /* GameScene.swift in Sources */,
 				900D20601F30A5E900683420 /* GameViewController.swift in Sources */,
+				90BA243E1F335A9600A7BD9C /* MyUntils.swift in Sources */,
 				900D20581F30A5E900683420 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +519,7 @@
 				900D20841F30A5E900683420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900D20851F30A5E900683420 /* Build configuration list for PBXNativeTarget "ZombieCongaTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				900D20871F30A5E900683420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900D20881F30A5E900683420 /* Build configuration list for PBXNativeTarget "ZombieCongaUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +537,7 @@
 				900D208A1F30A5E900683420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
