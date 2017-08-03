@@ -14,6 +14,9 @@ class GameScene: SKScene {
     var lastUpdateTime: TimeInterval = 0.0
     var dt: TimeInterval = 0.0
     
+    let zombieMovePointsPerSec: CGFloat = 180.0
+    var velocity = CGPoint.zero
+    
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     private let zombie: SKSpriteNode = SKSpriteNode(imageNamed: "zombie1")
@@ -33,7 +36,7 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         if lastUpdateTime > 0 {
-            dt = lastUpdateTime - currentTime
+            dt = currentTime - lastUpdateTime
         } else {
             dt = 0
         }
