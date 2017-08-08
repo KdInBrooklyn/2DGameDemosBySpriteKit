@@ -16,6 +16,11 @@
 		900D20681F30A5E900683420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900D20661F30A5E900683420 /* LaunchScreen.storyboard */; };
 		900D20731F30A5E900683420 /* ZombieCongaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D20721F30A5E900683420 /* ZombieCongaTests.swift */; };
 		900D207E1F30A5E900683420 /* ZombieCongaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D207D1F30A5E900683420 /* ZombieCongaUITests.swift */; };
+		90133EA31F3937AC0060E5BC /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90133E9E1F3937AC0060E5BC /* backgroundMusic.mp3 */; };
+		90133EA41F3937AC0060E5BC /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133E9F1F3937AC0060E5BC /* hitCat.wav */; };
+		90133EA51F3937AC0060E5BC /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133EA01F3937AC0060E5BC /* hitCatLady.wav */; };
+		90133EA61F3937AC0060E5BC /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133EA11F3937AC0060E5BC /* lose.wav */; };
+		90133EA71F3937AC0060E5BC /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133EA21F3937AC0060E5BC /* win.wav */; };
 		90BA243E1F335A9600A7BD9C /* MyUntils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BA243D1F335A9600A7BD9C /* MyUntils.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,11 @@
 		900D20791F30A5E900683420 /* ZombieCongaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieCongaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D207D1F30A5E900683420 /* ZombieCongaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieCongaUITests.swift; sourceTree = "<group>"; };
 		900D207F1F30A5E900683420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90133E9E1F3937AC0060E5BC /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		90133E9F1F3937AC0060E5BC /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
+		90133EA01F3937AC0060E5BC /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
+		90133EA11F3937AC0060E5BC /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		90133EA21F3937AC0060E5BC /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		90BA243D1F335A9600A7BD9C /* MyUntils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUntils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +93,7 @@
 		900D204B1F30A5E900683420 = {
 			isa = PBXGroup;
 			children = (
+				90133E9D1F3937AC0060E5BC /* Sounds */,
 				900D20561F30A5E900683420 /* ZombieConga */,
 				900D20711F30A5E900683420 /* ZombieCongaTests */,
 				900D207C1F30A5E900683420 /* ZombieCongaUITests */,
@@ -132,6 +143,18 @@
 				900D207F1F30A5E900683420 /* Info.plist */,
 			);
 			path = ZombieCongaUITests;
+			sourceTree = "<group>";
+		};
+		90133E9D1F3937AC0060E5BC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				90133E9E1F3937AC0060E5BC /* backgroundMusic.mp3 */,
+				90133E9F1F3937AC0060E5BC /* hitCat.wav */,
+				90133EA01F3937AC0060E5BC /* hitCatLady.wav */,
+				90133EA11F3937AC0060E5BC /* lose.wav */,
+				90133EA21F3937AC0060E5BC /* win.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +267,12 @@
 				900D20631F30A5E900683420 /* Main.storyboard in Resources */,
 				900D20651F30A5E900683420 /* Assets.xcassets in Resources */,
 				900D20681F30A5E900683420 /* LaunchScreen.storyboard in Resources */,
+				90133EA41F3937AC0060E5BC /* hitCat.wav in Resources */,
+				90133EA31F3937AC0060E5BC /* backgroundMusic.mp3 in Resources */,
+				90133EA51F3937AC0060E5BC /* hitCatLady.wav in Resources */,
+				90133EA71F3937AC0060E5BC /* win.wav in Resources */,
 				900D205C1F30A5E900683420 /* Actions.sks in Resources */,
+				90133EA61F3937AC0060E5BC /* lose.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
