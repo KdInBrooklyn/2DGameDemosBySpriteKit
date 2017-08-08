@@ -21,6 +21,7 @@ class GameScene: SKScene {
     let zombieRotateRadiansPersec: CGFloat = 4.0*CGFloat(Double.pi)
     
     let playableRect: CGRect
+
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
