@@ -21,7 +21,9 @@
 		90133EA51F3937AC0060E5BC /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133EA01F3937AC0060E5BC /* hitCatLady.wav */; };
 		90133EA61F3937AC0060E5BC /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133EA11F3937AC0060E5BC /* lose.wav */; };
 		90133EA71F3937AC0060E5BC /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90133EA21F3937AC0060E5BC /* win.wav */; };
+		905491431F39F01F00DFD474 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905491421F39F01F00DFD474 /* GameOverScene.swift */; };
 		90BA243E1F335A9600A7BD9C /* MyUntils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BA243D1F335A9600A7BD9C /* MyUntils.swift */; };
+		90FD34221F3BD89D00AEC59E /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD34211F3BD89D00AEC59E /* MainMenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,9 @@
 		90133EA01F3937AC0060E5BC /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
 		90133EA11F3937AC0060E5BC /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		90133EA21F3937AC0060E5BC /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		905491421F39F01F00DFD474 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		90BA243D1F335A9600A7BD9C /* MyUntils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUntils.swift; sourceTree = "<group>"; };
+		90FD34211F3BD89D00AEC59E /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +121,9 @@
 				900D20571F30A5E900683420 /* AppDelegate.swift */,
 				90BA243D1F335A9600A7BD9C /* MyUntils.swift */,
 				900D205B1F30A5E900683420 /* Actions.sks */,
+				90FD34211F3BD89D00AEC59E /* MainMenuScene.swift */,
 				900D205D1F30A5E900683420 /* GameScene.swift */,
+				905491421F39F01F00DFD474 /* GameOverScene.swift */,
 				900D205F1F30A5E900683420 /* GameViewController.swift */,
 				900D20611F30A5E900683420 /* Main.storyboard */,
 				900D20641F30A5E900683420 /* Assets.xcassets */,
@@ -297,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FD34221F3BD89D00AEC59E /* MainMenuScene.swift in Sources */,
+				905491431F39F01F00DFD474 /* GameOverScene.swift in Sources */,
 				900D205E1F30A5E900683420 /* GameScene.swift in Sources */,
 				900D20601F30A5E900683420 /* GameViewController.swift in Sources */,
 				90BA243E1F335A9600A7BD9C /* MyUntils.swift in Sources */,

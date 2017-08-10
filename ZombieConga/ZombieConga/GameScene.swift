@@ -20,8 +20,16 @@ class GameScene: SKScene {
     var lastTouchLocation: CGPoint?
     let zombieRotateRadiansPersec: CGFloat = 4.0*CGFloat(Double.pi)
     
+    let blinkTime = 10.0
+    let duration = 3.0
+    let blinkAction = SKAction.customAction(withDuration: 3.0) { (node: SKNode, elspaedTime: CGFloat) in
+        let slice = 3.0 / 10.0
+        let remainder = Double(elspaedTime).truncatingRemainder(dividingBy: slice) //% slice
+        node.isHidden = remainder > slice / 2.0
+    }
+    var isInvincible: Bool = false
+    
     let playableRect: CGRect
-
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
@@ -29,7 +37,6 @@ class GameScene: SKScene {
     let zombieAnimation: SKAction
     fileprivate let catCollisionSound: SKAction = SKAction.playSoundFileNamed("hitCat.wav", waitForCompletion: false)
     fileprivate let enemyCollisionSound: SKAction = SKAction.playSoundFileNamed("hitCatLady.wav", waitForCompletion: false)
-    
     
     // MARK: - life cycle
     override init(size: CGSize) {
@@ -56,6 +63,8 @@ class GameScene: SKScene {
     }
     
     override func didMove(to view: SKView) {
+        playBackgroundMusic(fileName: "backgroundMusic.mp3")
+        
         backgroundColor = SKColor.brown
         
         let background = SKSpriteNode(imageNamed: "background1")
@@ -314,8 +323,17 @@ class GameScene: SKScene {
         }
         
         for enemy in hitEnemys {
-            self.zombieHitEnemy(enemy: enemy)
+//            self.zombieHitEnemy(enemy: enemy)
+            zombie.run(self.blinkAction)
+            
         }
         
+    }
+    
+    fileprivate func moveTrain() {
+        let gameoverScene = GameOverScene(size: CGSize(width: 1024, height: 768), won: false)
+        gameoverScene.scaleMode = scaleMode
+        let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+        view?.presentScene(gameoverScene, transition: reveal)
     }
 }
