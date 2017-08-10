@@ -31,6 +31,8 @@ class GameScene: SKScene {
     
     let playableRect: CGRect
     
+    let cameraNode = SKCameraNode()
+    
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     private let zombie: SKSpriteNode = SKSpriteNode(imageNamed: "zombie1")
@@ -81,6 +83,11 @@ class GameScene: SKScene {
 //        spawnEnemy()
         run(SKAction.repeatForever(SKAction.sequence([SKAction.run(spawnEnemy), SKAction.wait(forDuration: 2.0)])))
         run(SKAction.repeatForever(SKAction.sequence([SKAction.run(spawnCats), SKAction.wait(forDuration: 1.0)])))
+        
+        //添加摄像头节点
+        addChild(cameraNode)
+        camera = cameraNode
+        cameraNode.position = CGPoint(x: size.width/2.0, y: size.height/2.0)
     }
     
     override func update(_ currentTime: TimeInterval) {
